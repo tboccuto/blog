@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
-
+  before_fitler :authenticate_user!, except: [:show, :index]
+  
   # GET /posts or /posts.json
   def index
     @posts = Post.all
