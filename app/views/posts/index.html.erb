@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
-
+<style> p {font-size: 14px !important;}</style>
 <table>
   <thead>
     <tr>
@@ -16,7 +16,9 @@
       <tr>
         <td><%= post.title %></td>
         <h1><%= link_to post.title , post %><h1>
-        </tr>
+        <p align='right'>Posted <%= time_ago_in_words(post.created_at) %> ago</p>
+        <hr>
+      </tr>
     <% end %>
   </tbody>
 </table>
