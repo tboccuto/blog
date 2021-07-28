@@ -9,3 +9,5 @@ Things you may want to cover:
 
 ## Dependencies
 - Jquery
+- gem 'devise'
+- gem 'social-share-button'
