@@ -6,10 +6,8 @@ A blog built with Ruby on Rails framework. Also uses the gem 'devise' for user a
 - Rails 6.1.4
 
 ## Gem and other dependencies
-- Jquery
 - gem 'devise'
 - gem 'social-share-button'
- 
  
  dependencies { \
    "@rails/actioncable": "^6.0.0", \
